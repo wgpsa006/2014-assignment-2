@@ -1,0 +1,5 @@
+# Test that the constructor returns an empty list of nodes
+CreateGraph A
+CreateGraph B
+ListNodes A
+ListNodes B

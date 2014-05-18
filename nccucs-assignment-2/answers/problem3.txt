@@ -1,0 +1,9 @@
+/** Tests the constructor, but uses also the method nodes() to verify the construction. */
+testConstructor()
+
+/** Tests addNode(), but uses nodes() to verify the result. */
+public void testAddNode()
+
+/** Tests addEdge(), but uses children() to verify the result. */
+public void testAddEdge()
+

@@ -1,0 +1,20 @@
+created graph A
+created graph B
+created node n1 with cost 5
+created node n2 with cost 3
+added node n1 to A
+added node n1 to B
+added node n2 to A
+added node n2 to B
+added edge from n1 to n2 in A
+# Test that the only edge is from n1 to n2 in A
+the children of n1 in A are: n2
+the children of n2 in A are:
+the children of n1 in B are:
+added edge from n2 to n1 in B
+# Test that the edge from n2 to n1 is added in B
+the children of n2 in B are: n1
+added edge from n1 to n1 in A
+# Add an edge from n1 to itself in A and verify that B remains unchanged
+the children of n1 in A are: n1 n2
+the children of n1 in B are:

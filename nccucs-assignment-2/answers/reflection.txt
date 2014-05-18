@@ -1,0 +1,14 @@
+a. 
+ Problem 1: about 20 min
+ Problem 2: about 1 hr
+ Problem 3: about 1 hr
+ Problem 4: about 2 hr 
+ Problem 5: about 30 min
+ Problem 6: about 30 min 
+ Problem 7: about 10 min
+b.
+ first I need to know what is the keypoint of this problem
+ second I need to understand how to use hashmap
+ finally I need to test code and talk about the problem 
+c.
+ think twice before coding

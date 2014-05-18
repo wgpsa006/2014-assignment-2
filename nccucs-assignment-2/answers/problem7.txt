@@ -1,0 +1,6 @@
+為了測試 PathFinder 的 function 實作以下幾個功能:
+
+1.只有一個node 
+2.起點到終點有其他的路徑
+3.兩個無法連接的node
+4.不同的costs的點下如何到destination node

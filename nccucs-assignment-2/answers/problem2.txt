@@ -1,0 +1,42 @@
+The graph abstract data type (ADT) is defined as follows:
+
+class Graph
+提供建立 node和 edge的function
+
+建立empty graph
+@returns an empty graph object
+Graph ()
+
+@return true if the graph is empty, false if not
+boolean isEmpty()
+用來確認graph是否為空
+
+@requires n to be nonnull
+@return true if specified node is in the graph, false if not.
+boolean containsNode (n)
+用來確認graph中有無此node
+
+@requires n1 and n2 to be nonnull
+@return true if specified edge from n1 to n2 is in the graph, false if not.
+boolean containsEdge (n1, n2)
+用來確認graph中n1和n2有無連接的edge
+
+@return an unmodifiable set of all nodes in this graph
+public HashSet<E> nodes()
+用來取得graph 中的 nodes sets
+
+@requires nP to be nonnull && the graph contains nP
+@return an unmodifiable set of the children of the specified parent node
+public HashSet<E> children(E node)
+用來取得n的子集合
+
+@requires n to be nonnull && Graph !contains(node n)
+@return a new graph with this node added, or the existing graph if the node is already in the graph
+Graph addNode (n) 
+加一個點在graph中
+
+@requires n1 and n2 to be in the graph && no existing edge from n1 to n2 && n1 and n2 to be nonnull
+@return a new graph with an edge added from n1 to n2, or the existing Graph if the edge already exists.
+Graph addEdge (n1, n2)
+在n1和n2建立一個edge
+

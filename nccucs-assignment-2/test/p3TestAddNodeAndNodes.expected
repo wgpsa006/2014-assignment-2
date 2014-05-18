@@ -1,0 +1,19 @@
+# Create graphs A and B, nodes n1 and n2
+created graph A
+created graph B
+created node n1 with cost 3
+created node n2 with cost 6
+# Test empty lists of nodes
+A contains:
+B contains:
+added node n1 to A
+# Test that A has n1 and B has no nodes
+A contains: n1
+B contains:
+added node n1 to B
+# Test that A and B have n1
+A contains: n1
+B contains: n1
+added node n2 to A
+# Test that A has n2
+A contains: n1 n2

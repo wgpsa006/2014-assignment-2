@@ -1,0 +1,19 @@
+# Create graphs A and B, nodes n1 and n2
+CreateGraph A
+CreateGraph B
+CreateNode n1 3
+CreateNode n2 6
+# Test empty lists of nodes
+ListNodes A
+ListNodes B
+AddNode A n1
+# Test that A has n1 and B has no nodes
+ListNodes A
+ListNodes B
+AddNode B n1
+# Test that A and B have n1
+ListNodes A
+ListNodes B
+AddNode A n2
+# Test that A has n2
+ListNodes A

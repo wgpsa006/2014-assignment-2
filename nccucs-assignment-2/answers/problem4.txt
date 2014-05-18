@@ -1,0 +1,6 @@
+1.為了新增nodes 和 edges 在graph中，所以使用 HashMap 來實做這部分。
+
+2.使用HashMap 優點是 constant time，即便圖中點很多也可以運行很好。
+
+3.可以透過map的方式將資料一一對應，也比較好實作 edge 來代表整個graph。
+ 

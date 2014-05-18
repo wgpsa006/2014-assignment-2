@@ -1,0 +1,57 @@
+# A graph with only one node, as the source and as the destination
+CreateGraph g1
+CreateNode n1 1
+AddNode g1 n1
+FindPath g1 n1 -> n1
+
+# Try to find a path between two unconnected nodes
+CreateNode n2 2
+AddNode g1 n2
+FindPath g1 n1 -> n2
+
+# Try to find a path with an edge in the opposite direction
+AddEdge g1 n2 n1
+FindPath g1 n1 -> n2
+
+# Try to find again the first path when there is an additional path with a bigger cost
+AddEdge g1 n1 n2
+FindPath g1 n1 -> n1
+
+# Multiple source nodes with different costs, one destination node
+CreateGraph g2
+CreateNode n3 3
+CreateNode n4 1
+CreateNode n5 1
+AddNode g2 n1
+AddNode g2 n2
+AddNode g2 n3
+AddNode g2 n4
+AddNode g2 n5
+AddEdge g2 n1 n4
+AddEdge g2 n2 n4
+AddEdge g2 n3 n4
+AddEdge g2 n4 n5
+FindPath g2 n1 n2 n3 -> n5
+
+# A graph with two unconnected subgraphs with paths of different costs
+CreateGraph g3
+AddNode g3 n1
+AddNode g3 n2
+AddNode g3 n4
+AddNode g3 n5
+AddEdge g3 n1 n4
+AddEdge g3 n2 n5
+FindPath g3 n1 n2 -> n4 n5
+
+# Two alternate paths with different costs from one source node to one destination node
+CreateGraph g4
+CreateNode n6 5
+AddNode g4 n1
+AddNode g4 n2
+AddNode g4 n3
+AddNode g4 n6
+AddEdge g4 n1 n2
+AddEdge g4 n1 n3
+AddEdge g4 n2 n6
+AddEdge g4 n3 n6
+FindPath g4 n1 -> n6

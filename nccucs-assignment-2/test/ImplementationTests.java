@@ -17,6 +17,6 @@ public final class ImplementationTests extends TestSuite
     {
         super(s);
 
-        // addTestSuite(MyGreatTests.class);
+        addTestSuite(GraphTest.class);
     }
 }

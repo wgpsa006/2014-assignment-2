@@ -1,0 +1,5 @@
+# Test that the constructor returns an empty list of nodes
+created graph A
+created graph B
+A contains:
+B contains:

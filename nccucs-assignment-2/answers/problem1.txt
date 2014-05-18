@@ -1,0 +1,9 @@
+CreateGraph() 創造一個空的graph
+
+AddNode() 建立node在graph中
+
+AddEdge() 建立edge 從父點到子點
+
+ListNodes() 列出所有點
+
+ListChildren() 列出所有點的 Children

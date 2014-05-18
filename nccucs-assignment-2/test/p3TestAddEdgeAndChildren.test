@@ -1,0 +1,20 @@
+CreateGraph A
+CreateGraph B
+CreateNode n1 5
+CreateNode n2 3
+AddNode A n1
+AddNode B n1
+AddNode A n2
+AddNode B n2
+AddEdge A n1 n2
+# Test that the only edge is from n1 to n2 in A
+ListChildren A n1
+ListChildren A n2
+ListChildren B n1
+AddEdge B n2 n1
+# Test that the edge from n2 to n1 is added in B
+ListChildren B n2
+AddEdge A n1 n1
+# Add an edge from n1 to itself in A and verify that B remains unchanged
+ListChildren A n1
+ListChildren B n1
